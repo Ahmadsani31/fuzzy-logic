@@ -13,7 +13,7 @@ class MPerhitungan extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ['VarA', 'VarB', 'VarC', 'VarD', 'VarE', 'VarF'];
+    protected $allowedFields    = ['VarA', 'VarB', 'VarC', 'VarD', 'VarE', 'VarF', 'JenisTanah', 'PhTanah', 'Daerah'];
 
     // Dates
     protected $useTimestamps = true;

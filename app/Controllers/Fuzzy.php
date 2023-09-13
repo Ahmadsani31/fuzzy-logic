@@ -8,15 +8,18 @@ use CodeIgniter\API\ResponseTrait;
 class Fuzzy extends BaseController
 {
     use ResponseTrait;
+
     public function index()
     {
-
         $ValA = $this->request->getPost('varA');
         $ValB = $this->request->getPost('varB');
         $ValC = $this->request->getPost('varC');
         $ValD = $this->request->getPost('varD');
         $ValE = $this->request->getPost('varE');
         $ValF = $this->request->getPost('varF');
+        $JenisTanah = $this->request->getPost('JenisTanah');
+        $PhTanah = $this->request->getPost('PhTanah');
+        $Daerah = $this->request->getPost('Daerah');
 
         $dataInsert = [
             'VarA' => $ValA,
@@ -25,7 +28,11 @@ class Fuzzy extends BaseController
             'VarD' => $ValD,
             'VarE' => $ValE,
             'VarF' => $ValF,
+            'JenisTanah' => $JenisTanah,
+            'PhTanah' => $PhTanah,
+            'Daerah' => $Daerah,
         ];
+
 
         try {
             $this->mPerhitungan->insert($dataInsert);
@@ -717,6 +724,7 @@ class Fuzzy extends BaseController
             'message' => 'Berhasil',
             'PerhintunganID' => $PerhitunganID
         ], 200);
+
         // return redirect()->to('perhitungan/detail/' . $PerhintunganID);
         //     echo '<script>
         //     alert(' . number_format($pNz, 2) . ')

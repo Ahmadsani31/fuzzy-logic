@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Fuzzyfication;
 use App\Models\MHasil;
 use App\Models\MPerhitungan;
 use CodeIgniter\Controller;
@@ -55,6 +56,7 @@ abstract class BaseController extends Controller
 
         $this->mPerhitungan = new MPerhitungan();
         $this->mHasil = new MHasil();
+        $this->mFuzzyfication = new Fuzzyfication();
 
         // Preload any models, libraries, etc, here.
 

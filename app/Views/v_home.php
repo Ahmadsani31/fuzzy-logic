@@ -96,7 +96,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <h1 class="font-weight-bold" data-aos="fade-up" data-aos-delay="">Fuzzy Logic</h1>
-                <p class="lead " data-aos="fade-up" data-aos-delay="100">merupakan cabang ilmu matematika yang mempunyai fungsi untuk memberikan pemodelan pemecahan masalah seperti yang dilakukan manusia dengan bantuan teknologi komputer.</p>
+                <p class="lead " data-aos="fade-up" data-aos-delay="100">logika fuzzy adalah metodologi sistem kontrol pemecahan masalah yang cocok diterapkan pada sistem, mulai dari sistem yang sederhana sampai sistem yang rumit atau kompleks. Metodologi ini dapat diterapkan pada perangkat keras, perangkat lunak, atau kombinasi keduanya. Dalam Logika Klasik dinyatakan bahwa segala sesuatu bersifat biner, yang artinya adalah hanya dua kemungkinan yaitu “ya atau tidak”, “benar atau salah”, “baik atau buruk” dan lain-lain (Irawan & Herviana, 2019)</p>
 
               </div>
             </div>
@@ -116,9 +116,9 @@
             <h2 class="section-title" data-aos="fade-left" data-aos-delay="">Latar Belakang</h2>
           </div>
           <div class="col-lg-8" data-aos="fade-left" data-aos-delay="">
-            <p>Penelitian yang sedang berlangsung, Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            <p>Pada sektor pertanian, tanah merupakan faktor yang berperan sangat penting dalam menentukan usaha pertanian. Setiap daerah memiliki tingkat kesuburan tanah yang berbeda - beda dan tergantung dari jenis tanah dan letak geografis suatu daerah. Kesuburan tanah merupakan salah satu faktor penentu keberhasilan usaha pertanian. </p>
 
-            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+            <p>Namun ada kalanya banyak usaha pertanian yang gagal atau hasil tidak maksimal karena kurangnya pemahaman tentang tingkat kesuburan tanah meraka untuk jenis tanaman tepat dan sesuai dengan sampel tanah dari petani sendiri. Kurangnya pengetahuan dan pemahaman petani akan tingkat kesuburan tanah yang tidak sama satu sama lain untuk ditanami jenis tanaman yang tepat membuat petani kesulitan dalam menentukan jenis tanaman yang tepat untuk para petani tanam.</p>
           </div>
           <div class="col-lg-4" data-aos="fade-right" data-aos-delay="">
             <img src="<?= base_url('assets'); ?>/images/latarBelakang.jpg" alt="Image" class="img-fluid">
@@ -137,9 +137,15 @@
             <img src="<?= base_url('assets'); ?>/images/rumusanMasalah.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-8" data-aos="fade-right" data-aos-delay="">
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-
-            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+            <p>Berdasarkan analisa dan pengamatan yang penulis lakukan daerah Pasaman Barat terdapat beberapa masalah yang dapat penulis rumuskan sebagai berikut</p>
+            <ul>
+              <li>
+                Bagaimana pengukuran kesuburan tanah dan keasaman tanah dalam menentukan kelayakan penanaman sawit di Pasaman Barat?
+              </li>
+              <li>
+                Bagaimana menerapkan Fuzzy Logic dapat mengukur tingkat kesuburan dan keasaman tanah dalam penentuan kelayakan penanaman sawit di Pasaman Barat?
+              </li>
+            </ul>
           </div>
 
 
@@ -153,78 +159,21 @@
           <div class="col-12 mb-5 position-relative">
             <h2 class="section-title text-center mb-5">Fuzzyfication</h2>
           </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
-            <div class="service d-flex h-100">
-              <div class="svg-icon">
-                <img src="<?= base_url('assets'); ?>/images/flaticon/svg/002-travel-1.svg" alt="Image" class="img-fluid">
-              </div>
-              <div class="service-about">
-                <h3>C- Organik (%)</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service d-flex h-100">
-              <div class="svg-icon">
-                <img src="<?= base_url('assets'); ?>/images/flaticon/svg/001-travel.svg" alt="Image" class="img-fluid">
-              </div>
-              <div class="service-about">
-                <h3>P2O5 HCL (mg/100g)</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <?php
+          foreach ($data as $key => $value) {
+            # code...
+          ?>
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
+              <div class="service d-flex h-100">
+                <div class="service-about">
+                  <h3><?= $value['Nama']; ?></h3>
+                  <p><?= $value['Keterangan']; ?></p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
-            <div class="service d-flex h-100">
-              <div class="svg-icon">
-                <img src="<?= base_url('assets'); ?>/images/flaticon/svg/003-travel-2.svg" alt="Image" class="img-fluid">
-              </div>
-              <div class="service-about">
-                <h3>K2O HCL</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service d-flex h-100">
-              <div class="svg-icon">
-                <img src="<?= base_url('assets'); ?>/images/flaticon/svg/004-travel-3.svg" alt="Image" class="img-fluid">
-              </div>
-              <div class="service-about">
-                <h3>KTK (me/100g)</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="">
-            <div class="service d-flex h-100">
-              <div class="svg-icon">
-                <img src="<?= base_url('assets'); ?>/images/flaticon/svg/005-travel-4.svg" alt="Image" class="img-fluid">
-              </div>
-              <div class="service-about">
-                <h3>Kejenuhan Basa (%)</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service d-flex h-100">
-              <div class="svg-icon">
-                <img src="<?= base_url('assets'); ?>/images/flaticon/svg/006-food.svg" alt="Image" class="img-fluid">
-              </div>
-              <div class="service-about">
-                <h3>pH H2O</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-          </div>
+          <?php
+          }
+          ?>
 
         </div>
       </div>
@@ -243,17 +192,18 @@
             <div class="card" data-aos="fade-up" data-aos-delay="">
               <?php echo form_open(route_to('fuzzy'), 'method="post" id="form-perhitungan" class="p-5"') ?>
               <div class="form-group">
-                <label class="text-black">B</label>
-                <select name="" class="form-control" id="">
-                  <option value="">Pilih</option>
-                </select>
+                <label class="text-black">Nama Daerah</label>
+                <input type="text" class="form-control" name="Daerah" placeholder="Alamat / Daerah " required>
               </div>
-              <div class="form-group">
-                <label class="text-black">A</label>
-                <select name="" class="form-control" id="">
-                  <option value="">Pilih</option>
-                </select>
-              </div>
+                 <div class="form-group">
+                    <label class="text-black">Jenis Tanah</label>
+                    <select name="JenisTanah" class="form-control" id="">
+                      <option value="Pilih">Pilih</option>
+                      <option value="Andosol">Andosol</option>
+                      <option value="Organosol">Organosol</option>
+                      <option value="Regosol">Regosol</option>
+                    </select>
+                  </div>
               <hr>
               <div class="form-group">
                 <label class="text-black">C- Organik (%)</label>

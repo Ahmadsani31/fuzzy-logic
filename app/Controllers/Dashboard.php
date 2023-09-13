@@ -9,7 +9,8 @@ class Dashboard extends BaseController
     public function index()
     {
         //
-        return view('v_home');
+        $this->data['data'] = $this->mFuzzyfication->findAll();
+        return view('v_home', $this->data);
     }
 
     public function hasil()

@@ -66,7 +66,7 @@
         <div class="row align-items-center justify-content-center">
 
           <div class="col-4">
-            <h1 class="m-0 site-logo"><a href="index.html">Logic</a></h1>
+            <h1 class="m-0 site-logo"><a href="<?= base_url('/'); ?>">Logic</a></h1>
           </div>
 
           <div class="col-8">
@@ -153,7 +153,7 @@
             <h2 class="section-title" data-aos="fade-left" data-aos-delay="">Output</h2>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <h5>Perhitungan Rule Satu</h5>
+            <h5>Mesin Inferesi (Fungsi MIN)</h5>
             <div class="table-responsive">
               <table class="table text-center">
                 <thead>
@@ -178,7 +178,7 @@
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="">
-            <h5>Perhitungan Rule Dua</h5>
+            <h5>Defuzzyfikasi</h5>
             <div class="table-responsive">
               <table class="table text-center">
                 <thead>
@@ -208,10 +208,21 @@
               <table class="table text-center">
                 <thead>
                   <tr>
-                    <th scope="col">Kesuburan</th>
-                    <th scope="col"><?= json_decode($Hasil['Hitung3'])->Z1; ?></th>
+                    <th scope="col">Daerah</th>
+                    <th scope="col">Jenis Tanah</th>
+                    <th scope="col">Ph Tanah</th>
+                    <th scope="col">Kesuburan Tanah</th>
+
                   </tr>
                 </thead>
+                <tbody>
+                  <tr>
+                    <td><?= @$Daerah; ?></td>
+                    <td><?= @$TanahSubur; ?></td>
+                    <td><?= @$PhTanah->Nama; ?></td>
+                    <td><?= json_decode($Hasil['Hitung3'])->Z1; ?>(<?= $KeTanah->Nama; ?>)</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

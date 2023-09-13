@@ -66,7 +66,7 @@
         <div class="row align-items-center justify-content-center">
 
           <div class="col-4">
-            <h1 class="m-0 site-logo"><a href="index.html">Logic</a></h1>
+            <h1 class="m-0 site-logo"><a href="<?= base_url('/'); ?>">Logic</a></h1>
           </div>
 
           <div class="col-8">
